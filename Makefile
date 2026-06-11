@@ -2,7 +2,7 @@ DATABASE_URL ?= postgres://medicabinet:medicabinet@localhost:5432/medicabinet?ss
 
 .PHONY: up down logs sqlc migrate-up test dev-server dev-client
 
-## up: start Postgres + backend via docker compose
+## up: start the full stack (Postgres, migrations, server, client) via docker compose
 up:
 	docker compose up --build
 

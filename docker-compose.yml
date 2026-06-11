@@ -15,6 +15,18 @@ services:
       timeout: 5s
       retries: 5
 
+  migrate:
+    image: migrate/migrate
+    volumes:
+      - ./server/db/migrations:/migrations
+    command:
+      - "-path=/migrations"
+      - "-database=postgres://medicabinet:medicabinet@postgres:5432/medicabinet?sslmode=disable"
+      - "up"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
   server:
     build: ./server
     environment:
@@ -25,6 +37,15 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
 
 volumes:
   postgres-data:

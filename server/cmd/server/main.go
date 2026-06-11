@@ -6,6 +6,8 @@ import (
 
 	"github.com/HIP-2026/MediCabinet/server/internal/api"
 	"github.com/HIP-2026/MediCabinet/server/internal/config"
+	"github.com/HIP-2026/MediCabinet/server/internal/db"
+	"github.com/HIP-2026/MediCabinet/server/internal/inventory"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 
@@ -20,7 +22,12 @@ func main() {
 		defer pool.Close()
 	}
 
-	router := api.NewRouter(pool)
+	var invStore *inventory.Store
+	if pool != nil {
+		invStore = inventory.New(db.New(pool))
+	}
+
+	router := api.NewRouter(pool, invStore)
 
 	log.Printf("MediCabinet server listening on :%s", cfg.Port)
 	if err := router.Run(":" + cfg.Port); err != nil {
