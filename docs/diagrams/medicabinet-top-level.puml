@@ -1,0 +1,40 @@
+@startuml medicabinet-top-level
+' Top-level architecture (steps 1-5): logical components and their services
+skinparam monochrome true
+skinparam shadowing false
+skinparam componentStyle uml2
+skinparam defaultFontName Helvetica
+top to bottom direction
+
+component "Inventory" as inv
+component "Medication\nCatalog" as cat
+component "Interaction\nChecker" as ic
+component "Reminder &\nAlerts" as alerts
+
+() "Inventory\nService" as invS
+() "Catalog\nService" as catS
+() "Interaction\nService" as icS
+() "Reminder\nService" as remS
+
+inv -down- invS
+cat -down- catS
+ic -down- icS
+alerts -down- remS
+
+' component-to-component dependencies
+ic -up-( catS
+alerts -up-( invS
+
+component "MediCabinet Webapp" as app {
+  component "Scan & Add" as scan
+  component "Inventory\nBrowser" as browse
+  component "Dose &\nReminder UI" as dose
+}
+
+scan -up-( invS
+scan -up-( catS
+browse -up-( invS
+dose -up-( remS
+dose -up-( icS
+scan -[hidden]right- browse
+@enduml

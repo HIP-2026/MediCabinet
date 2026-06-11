@@ -1,0 +1,66 @@
+@startuml medicabinet-aom
+' Analysis Object Model (AOM) excerpt for the user stories
+' "Add medication by scanning the barcode" + "Take medications correctly"
+skinparam monochrome true
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Helvetica
+hide circle
+
+class Household {
+  name
+}
+
+class HouseholdMember {
+  name
+  emailAddress
+  role
+}
+
+class InventoryItem {
+  quantity
+  expirationDate
+  location
+  restock()
+  adjustQuantity()
+}
+
+class Medication {
+  name
+  barcode
+  activeIngredient
+}
+
+class Contraindication {
+  severity
+  description
+}
+
+class MedicationPlan {
+  startDate
+  endDate
+}
+
+class PlanEntry {
+  dose
+  schedule
+  snooze()
+  markAsTaken()
+}
+
+class Alert {
+  type
+  leadTime
+  trigger()
+}
+
+Household "1" -- "*" HouseholdMember
+Household "1" -- "*" InventoryItem
+InventoryItem "*" -right- "1" Medication
+Medication "*" - "*" Medication
+(Medication, Medication) .. Contraindication
+Alert "*" -- "1" InventoryItem
+HouseholdMember "1" -- "0..1" MedicationPlan
+MedicationPlan "1" *-- "*" PlanEntry
+PlanEntry "*" -- "1" Medication
+@enduml

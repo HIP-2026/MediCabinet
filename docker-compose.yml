@@ -1,0 +1,51 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: medicabinet
+      POSTGRES_PASSWORD: medicabinet
+      POSTGRES_DB: medicabinet
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medicabinet"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  migrate:
+    image: migrate/migrate
+    volumes:
+      - ./server/db/migrations:/migrations
+    command:
+      - "-path=/migrations"
+      - "-database=postgres://medicabinet:medicabinet@postgres:5432/medicabinet?sslmode=disable"
+      - "up"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  server:
+    build: ./server
+    environment:
+      PORT: "8080"
+      DATABASE_URL: "postgres://medicabinet:medicabinet@postgres:5432/medicabinet?sslmode=disable"
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+
+volumes:
+  postgres-data:

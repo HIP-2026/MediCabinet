@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="676px" preserveAspectRatio="none" style="width:375px;height:676px;" version="1.1" viewBox="0 0 375 676" width="375px" zoomAndPan="magnify"><defs/><g><!--class Household--><rect fill="#F8F8F8" height="52.7734" id="Household" style="stroke: #383838; stroke-width: 1.5;" width="73" x="146.5" y="20.5"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="67" x="149.5" y="36.6387">Household</text><line style="stroke: #383838; stroke-width: 1.5;" x1="147.5" x2="218.5" y1="44.4688" y2="44.4688"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="152.5" y="58.6792">name</text><line style="stroke: #383838; stroke-width: 1.5;" x1="147.5" x2="218.5" y1="65.2734" y2="65.2734"/><!--class HouseholdMember--><rect fill="#F8F8F8" height="78.3828" id="HouseholdMember" style="stroke: #383838; stroke-width: 1.5;" width="123" x="143.5" y="159"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="146.5" y="175.1387">HouseholdMember</text><line style="stroke: #383838; stroke-width: 1.5;" x1="144.5" x2="265.5" y1="182.9688" y2="182.9688"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="149.5" y="197.1792">name</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="149.5" y="209.9839">emailAddress</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="22" x="149.5" y="222.7886">role</text><line style="stroke: #383838; stroke-width: 1.5;" x1="144.5" x2="265.5" y1="229.3828" y2="229.3828"/><!--class InventoryItem--><rect fill="#F8F8F8" height="103.9922" id="InventoryItem" style="stroke: #383838; stroke-width: 1.5;" width="102" x="6" y="146"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="15" y="162.1387">InventoryItem</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="107" y1="169.9688" y2="169.9688"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="12" y="184.1792">quantity</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="12" y="196.9839">expirationDate</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="44" x="12" y="209.7886">location</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="107" y1="216.3828" y2="216.3828"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="12" y="230.5933">restock()</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="12" y="243.3979">adjustQuantity()</text><!--class Medication--><rect fill="#F8F8F8" height="78.3828" id="Medication" style="stroke: #383838; stroke-width: 1.5;" width="102" x="79" y="587"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="68" x="96" y="603.1387">Medication</text><line style="stroke: #383838; stroke-width: 1.5;" x1="80" x2="180" y1="610.9688" y2="610.9688"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="85" y="625.1792">name</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="85" y="637.9839">barcode</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="85" y="650.7886">activeIngredient</text><line style="stroke: #383838; stroke-width: 1.5;" x1="80" x2="180" y1="657.3828" y2="657.3828"/><!--class Contraindication--><rect fill="#F8F8F8" height="65.5781" id="Contraindication" style="stroke: #383838; stroke-width: 1.5;" width="109" x="255.5" y="593"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="103" x="258.5" y="609.1387">Contraindication</text><line style="stroke: #383838; stroke-width: 1.5;" x1="256.5" x2="363.5" y1="616.9688" y2="616.9688"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="261.5" y="631.1792">severity</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63" x="261.5" y="643.9839">description</text><line style="stroke: #383838; stroke-width: 1.5;" x1="256.5" x2="363.5" y1="650.5781" y2="650.5781"/><!--class MedicationPlan--><rect fill="#F8F8F8" height="65.5781" id="MedicationPlan" style="stroke: #383838; stroke-width: 1.5;" width="101" x="143.5" y="310"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="95" x="146.5" y="326.1387">MedicationPlan</text><line style="stroke: #383838; stroke-width: 1.5;" x1="144.5" x2="243.5" y1="333.9688" y2="333.9688"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="149.5" y="348.1792">startDate</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="149.5" y="360.9839">endDate</text><line style="stroke: #383838; stroke-width: 1.5;" x1="144.5" x2="243.5" y1="367.5781" y2="367.5781"/><!--class PlanEntry--><rect fill="#F8F8F8" height="91.1875" id="PlanEntry" style="stroke: #383838; stroke-width: 1.5;" width="97" x="133.5" y="436"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="59" x="152.5" y="452.1387">PlanEntry</text><line style="stroke: #383838; stroke-width: 1.5;" x1="134.5" x2="229.5" y1="459.9688" y2="459.9688"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="28" x="139.5" y="474.1792">dose</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="139.5" y="486.9839">schedule</text><line style="stroke: #383838; stroke-width: 1.5;" x1="134.5" x2="229.5" y1="493.5781" y2="493.5781"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="139.5" y="507.7886">snooze()</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="139.5" y="520.5933">markAsTaken()</text><!--class Alert--><rect fill="#F8F8F8" height="78.3828" id="Alert" style="stroke: #383838; stroke-width: 1.5;" width="64" x="25" y="8"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="42.5" y="24.1387">Alert</text><line style="stroke: #383838; stroke-width: 1.5;" x1="26" x2="88" y1="31.9688" y2="31.9688"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="24" x="31" y="46.1792">type</text><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="31" y="58.9839">leadTime</text><line style="stroke: #383838; stroke-width: 1.5;" x1="26" x2="88" y1="65.5781" y2="65.5781"/><text fill="#000000" font-family="Helvetica" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="31" y="79.7886">trigger()</text><ellipse cx="218" cy="626" fill="#000000" rx="2" ry="2" style="stroke: none; stroke-width: 1.0;"/><!--link Household to HouseholdMember--><path d="M186.78,73.61 C190.25,97.08 195.42,132.13 199.37,158.88 " fill="none" id="Household-HouseholdMember" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="178.7319" y="93.1778">1</text><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="190.8008" y="147.9126">*</text><!--link Household to InventoryItem--><path d="M161.34,73.61 C144.59,93.42 120.87,121.47 100.28,145.83 " fill="none" id="Household-InventoryItem" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="147.7269" y="93.1778">1</text><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="98.6254" y="134.8882">*</text><!--link InventoryItem to Medication--><path d="M65.81,250.39 C80.65,337.02 110.33,510.2 123.47,586.91 " fill="none" id="InventoryItem-Medication" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="59.4903" y="270.1393">*</text><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="113.6602" y="575.9478">1</text><!--link Medication to apoint14--><path d="M181.22,654.46 C193,651.89 204.78,643.03 216.56,627.88 " fill="none" id="Medication-apoint14" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="188.915" y="654.4568">*</text><!--link apoint14 to Medication--><path d="M216.56,624.12 C204.78,608.97 193,600.11 181.22,597.54 " fill="none" id="apoint14-Medication" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="188.915" y="589.5324">*</text><!--link apoint14 to Contraindication--><path d="M220.16,626 C231.85,626 243.55,626 255.25,626 " fill="none" id="apoint14-Contraindication" style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><!--link Alert to InventoryItem--><path d="M57,86.37 C57,104.48 57,126.34 57,145.84 " fill="none" id="Alert-InventoryItem" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="49.3984" y="106.4712">*</text><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="48.4625" y="134.8995">1</text><!--link HouseholdMember to MedicationPlan--><path d="M202.05,237.32 C200.31,259.99 198.13,288.37 196.47,309.87 " fill="none" id="HouseholdMember-MedicationPlan" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="192.8555" y="257.4126">1</text><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24" x="170.5938" y="298.9925">0..1</text><!--link MedicationPlan to PlanEntry--><path d="M190.03,389.19 C188.71,404.17 187.25,420.83 185.93,435.78 " fill="none" id="MedicationPlan-PlanEntry" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="191.19,376,186.6778,381.6249,190.1345,387.9535,194.6467,382.3286,191.19,376" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="181.9344" y="395.5852">1</text><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="178.9932" y="425.0262">*</text><!--link PlanEntry to Medication--><path d="M165.69,527.2 C158.72,546.3 150.67,568.37 143.98,586.7 " fill="none" id="PlanEntry-Medication" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="155.6566" y="547.409">*</text><text fill="#000000" font-family="Helvetica" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="137.6329" y="575.9949">1</text><!--
+@startuml medicabinet-aom
+skinparam monochrome true
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Helvetica
+hide circle
+
+class Household {
+  name
+}
+
+class HouseholdMember {
+  name
+  emailAddress
+  role
+}
+
+class InventoryItem {
+  quantity
+  expirationDate
+  location
+  restock()
+  adjustQuantity()
+}
+
+class Medication {
+  name
+  barcode
+  activeIngredient
+}
+
+class Contraindication {
+  severity
+  description
+}
+
+class MedicationPlan {
+  startDate
+  endDate
+}
+
+class PlanEntry {
+  dose
+  schedule
+  snooze()
+  markAsTaken()
+}
+
+class Alert {
+  type
+  leadTime
+  trigger()
+}
+
+Household "1" - - "*" HouseholdMember
+Household "1" - - "*" InventoryItem
+InventoryItem "*" -right- "1" Medication
+Medication "*" - "*" Medication
+(Medication, Medication) .. Contraindication
+Alert "*" - - "1" InventoryItem
+HouseholdMember "1" - - "0..1" MedicationPlan
+MedicationPlan "1" *- - "*" PlanEntry
+PlanEntry "*" - - "1" Medication
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 17:10:25 UTC 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.31+11-post-1ubuntu1-22.04.2-Ubuntu
+Operating System: Linux
+OS Version: 6.8.0-124-generic
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
