@@ -1,0 +1,23 @@
+# Go
+/server/bin/
+/server/server
+*.test
+*.out
+
+# Node / Next.js
+node_modules/
+/client/.next/
+/client/out/
+/client/build/
+next-env.d.ts
+
+# Environment files
+.env
+.env.local
+*.local
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
